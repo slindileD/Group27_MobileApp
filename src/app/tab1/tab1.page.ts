@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private router:Router) {}
 
+
+RegisterClient(){
+  this.router.navigate(['/tabs/tab2']);
 }
+}
+
