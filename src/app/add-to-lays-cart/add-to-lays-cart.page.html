@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add To Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="simbaDiv">
+  <img src ="assets/lays.jpg"alt ="lays"  class ="ImgSimba" (click)="ViewLaysDetails()">
+ <ion-item>
+ <ion-label >Lays</ion-label ><br>
+ </ion-item>
+ <ion-item>
+ <ion-label>Potato Chips</ion-label><br>
+ </ion-item>
+ <ion-item>
+  <ion-label>Price: R12.00</ion-label> <br>
+  </ion-item>
+  <ion-item>
+   <ion-label>Quantity:</ion-label>
+   <ion-input type="number" value="1" min="1" max="9"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>Flavour</ion-label>
+    <ion-select okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Salted">Salted</ion-select-option>
+      <ion-select-option value="Cream Cheese and Chives">Cream Cheese and Chives</ion-select-option>
+      <ion-select-option value="American BBQ">American BBQ</ion-select-option>
+      <ion-select-option value="Caribbean Onion and Balsamic Vinegar">Caribbean Onion and Balsamic Vinegar</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+ </div>
+<ion-item>
+ <div>
+ <label>Description: It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S® potato chip is perfectly crispy and full of fresh potato taste. Happiness in Every Bite.® </label>
+ </div>
+ </ion-item>
+
+ <div style= "text-align: center">
+  <ion-button  color="primary" type="submit" (click)="ContinueShopping()">Continue Shopping</ion-button> 
+  <ion-button  color="success" type="submit" (click)="GoToViewCart()">View Cart</ion-button> 
+   </div>
+</ion-content>
+

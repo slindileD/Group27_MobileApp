@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add To Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="simbaDiv">
+ <img class = "ImgSimba" src ="assets/Simba-chips.jpg"alt ="Simba-Chips">
+ <ion-item>
+ <ion-label >Simba</ion-label ><br>
+ </ion-item>
+ <ion-item>
+ <ion-label>Potato Chips</ion-label><br>
+ </ion-item>
+ <ion-item>
+  <ion-label>Price: R12.00</ion-label> <br>
+  </ion-item>
+  <ion-item>
+   <ion-label>Quantity:</ion-label>
+   <ion-input type="number" value="1" min="1" max="9"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>Flavour</ion-label>
+    <ion-select okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Tomato">Tomato</ion-select-option>
+      <ion-select-option value="Beef">Beef</ion-select-option>
+      <ion-select-option value="Mexican Chilli">Mexican Chilli</ion-select-option>
+      <ion-select-option value="Cheese">Cheese</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+ </div>
+<ion-item>
+ <div>
+ <label>Description: Simba chips are made from only the very best potatoes grown right here in South Africa. Simba, the King of Snacks, is very choosy, and he guarantees that every pack will be of the highest quality and will always Roarrr with Flavour. </label>
+ </div>
+ </ion-item>
+
+ <div style= "text-align: center">
+  <ion-button  color="primary" type="submit" (click)="ContinueShopping()">Continue Shopping</ion-button> 
+  <ion-button  color="success" type="submit" (click)="GoToViewCart()">View Cart</ion-button> 
+   </div>
+</ion-content>

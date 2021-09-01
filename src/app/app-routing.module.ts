@@ -46,6 +46,63 @@ const routes: Routes = [
     path: 'regenerate-order-receipt',
     loadChildren: () => import('./regenerate-order-receipt/regenerate-order-receipt.module').then( m => m.RegenerateOrderReceiptPageModule)
   },
+  {
+    path: 'browse-snacks',
+    loadChildren: () => import('./browse-snacks/browse-snacks.module').then( m => m.BrowseSnacksPageModule)
+  },
+  {
+    path: 'browse-water',
+    loadChildren: () => import('./browse-water/browse-water.module').then( m => m.BrowseWaterPageModule)
+  },
+  {
+    path: 'view-cart',
+    loadChildren: () => import('./view-cart/view-cart.module').then( m => m.ViewCartPageModule)
+  },
+  {
+    path: 'view-simba-details',
+    loadChildren: () => import('./view-simba-details/view-simba-details.module').then( m => m.ViewSimbaDetailsPageModule)
+  },
+  {
+    path: 'view-lays-details',
+    loadChildren: () => import('./view-lays-details/view-lays-details.module').then( m => m.ViewLaysDetailsPageModule)
+  },
+  {
+    path: 'view-maynards-details',
+    loadChildren: () => import('./view-maynards-details/view-maynards-details.module').then( m => m.ViewMaynardsDetailsPageModule)
+  },
+  {
+    path: 'add-simba-to-cart',
+    loadChildren: () => import('./add-simba-to-cart/add-simba-to-cart.module').then( m => m.AddSimbaToCartPageModule)
+  },
+  {
+    path: 'view-cart-simba',
+    loadChildren: () => import('./view-cart-simba/view-cart-simba.module').then( m => m.ViewCartSimbaPageModule)
+  },
+  {
+    path: 'empty-cart',
+    loadChildren: () => import('./empty-cart/empty-cart.module').then( m => m.EmptyCartPageModule)
+  },
+  {
+    path: 'update-cart',
+    loadChildren: () => import('./update-cart/update-cart.module').then( m => m.UpdateCartPageModule)
+  },
+  {
+    path: 'add-maynards-to-cart',
+    loadChildren: () => import('./add-maynards-to-cart/add-maynards-to-cart.module').then( m => m.AddMaynardsToCartPageModule)
+  },
+  {
+    path: 'view-cart-maynards',
+    loadChildren: () => import('./view-cart-maynards/view-cart-maynards.module').then( m => m.ViewCartMaynardsPageModule)
+  },
+  {
+    path: 'add-to-lays-cart',
+    loadChildren: () => import('./add-to-lays-cart/add-to-lays-cart.module').then( m => m.AddToLaysCartPageModule)
+  },
+  {
+    path: 'view-cart-lays',
+    loadChildren: () => import('./view-cart-lays/view-cart-lays.module').then( m => m.ViewCartLaysPageModule)
+  }
+ 
 
 ];
 @NgModule({
