@@ -101,8 +101,47 @@ const routes: Routes = [
   {
     path: 'view-cart-lays',
     loadChildren: () => import('./view-cart-lays/view-cart-lays.module').then( m => m.ViewCartLaysPageModule)
+  },
+  {
+    path: 'add-aquelle-to-cart',
+    loadChildren: () => import('./add-aquelle-to-cart/add-aquelle-to-cart.module').then( m => m.AddAquelleToCartPageModule)
+  },
+  {
+    path: 'view-cart-aquelle',
+    loadChildren: () => import('./view-cart-aquelle/view-cart-aquelle.module').then( m => m.ViewCartAquellePageModule)
+  },
+  {
+    path: 'view-aquelle-details',
+    loadChildren: () => import('./view-aquelle-details/view-aquelle-details.module').then( m => m.ViewAquelleDetailsPageModule)
+  },
+  {
+    path: 'add-water-world-water-to-cart',
+    loadChildren: () => import('./add-water-world-water-to-cart/add-water-world-water-to-cart.module').then( m => m.AddWaterWorldWaterToCartPageModule)
+  },
+  {
+    path: 'add-bulk-water-to-cart',
+    loadChildren: () => import('./add-bulk-water-to-cart/add-bulk-water-to-cart.module').then( m => m.AddBulkWaterToCartPageModule)
+  },
+  {
+    path: 'view-cart-bulk-water',
+    loadChildren: () => import('./view-cart-bulk-water/view-cart-bulk-water.module').then( m => m.ViewCartBulkWaterPageModule)
+  },
+  {
+    path: 'view-cart-water-world-water',
+    loadChildren: () => import('./view-cart-water-world-water/view-cart-water-world-water.module').then( m => m.ViewCartWaterWorldWaterPageModule)
+  },
+  {
+    path: 'view-bulk-water-details',
+    loadChildren: () => import('./view-bulk-water-details/view-bulk-water-details.module').then( m => m.ViewBulkWaterDetailsPageModule)
+  },
+  {
+    path: 'view-water-world-water-details',
+    loadChildren: () => import('./view-water-world-water-details/view-water-world-water-details.module').then( m => m.ViewWaterWorldWaterDetailsPageModule)
+  },
+  {
+    path: 'browse-bottles',
+    loadChildren: () => import('./browse-bottles/browse-bottles.module').then( m => m.BrowseBottlesPageModule)
   }
- 
 
 ];
 @NgModule({

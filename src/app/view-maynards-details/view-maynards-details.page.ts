@@ -13,7 +13,7 @@ export class ViewMaynardsDetailsPage implements OnInit {
   ngOnInit() {
   }
 RequestCancelViewProduct(){
-  this.router.navigate(['/tabs/tab1']);
+  this.router.navigate(['/tabs/tab3']);
 }
 
 RequestAddToCart(){

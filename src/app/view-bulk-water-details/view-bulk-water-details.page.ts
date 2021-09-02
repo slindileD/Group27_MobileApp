@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 @Component({
-  selector: 'app-view-lays-details',
-  templateUrl: './view-lays-details.page.html',
-  styleUrls: ['./view-lays-details.page.scss'],
+  selector: 'app-view-bulk-water-details',
+  templateUrl: './view-bulk-water-details.page.html',
+  styleUrls: ['./view-bulk-water-details.page.scss'],
 })
-export class ViewLaysDetailsPage implements OnInit {
+export class ViewBulkWaterDetailsPage implements OnInit {
+
 
   constructor(private router:Router) { }
 
@@ -16,8 +17,6 @@ RequestCancelViewProduct(){
 }
 
 RequestAddToCart(){
-  this.router.navigate(['/add-to-lays-cart']);
+  this.router.navigate(['/add-bulk-water-to-cart']);
 }
-
-
 }

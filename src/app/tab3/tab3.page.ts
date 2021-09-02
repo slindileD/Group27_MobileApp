@@ -11,4 +11,8 @@ export class Tab3Page {
 BrowseSnacks(){
   this.router.navigate(['/browse-snacks']);
 }
+
+BrowseWater(){
+  this.router.navigate(['/browse-water']);
+}
 }
